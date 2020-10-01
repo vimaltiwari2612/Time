@@ -1,3 +1,3 @@
-# Clock using HTML, CSS and JS
+# Clock using Simple HTML, CSS and JS
 
 https://vimaltiwari2612.github.io/Time/
