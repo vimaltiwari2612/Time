@@ -36,3 +36,160 @@
 	background-color: red;
     
 }
+
+
+/*:root {
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: black;
+  }
+}*/
+
+@font-face {
+  font-family: 'gi';
+  src: url('https://gradient-digital-clock--crusherx.repl.co/genshin-impact.ttf') format('truetype');
+}
+
+html {
+  user-select: none;
+  overflow: none;
+  overflow-x: none;
+  overflow-y: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gi', Impact;
+  font-weight: normal;
+  
+  background: linear-gradient(
+      315deg,
+      rgba(101, 0, 94, 1) 3%,
+      rgba(60, 132, 206, 1) 38%,
+      rgba(48, 238, 226, 1) 68%,
+      rgba(255, 25, 25, 10) 95%
+    );
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: gradient 15s ease infinite;
+  
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+button {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #111, #333); 
+  transition: all 0.4s ease;
+  border: none;
+  cursor: pointer;
+  outline: 3px solid white;
+}
+
+button:hover, 
+button:focus,
+button:active {
+  background: linear-gradient(90deg, #222, #444);
+  transform: scale(1.05);
+}
+
+.btn-content {
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#time {
+  font-size: 12em;
+  color: black;
+  text-align: center;
+  position: relative;
+  font-family: 'gi', Impact;
+}
+  
+#date {
+  font-size: 4em;
+  color: black;
+  text-align: center;
+  position: relative;
+  font-family: 'gi', Impact;
+}
+
+
+
+
+
+/* Mobile */
+.mobile {
+  background: black;
+  color: white;
+  text-align: center;
+  
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+span {
+  color: steelblue;
+}
+
+h1.shrug {
+  font-size: 20vw;
+  margin-top: 30vh;
+  display: none;
+  font-family: Arial;
+  font-weight: bolder;
+}
+
+h2.shrug {
+  font-size: 5vw;
+  font-weight: bold;
+  display: none;
+  font-family: Arial;
+  color: #ff0000;
+}
+
+h3.shrug {
+  font-size: 3vw;
+  display: none;
+  font-family: Arial;
+}
+
+@media (max-width: 600px) {
+  #time, #date, .btn-content {
+    display: none;
+  } 
+
+  .mobile, h1.shrug, h2.shrug, h3.shrug {
+    display: block;
+  }
+}

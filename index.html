@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Gradient Clock</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock Using Pure JS</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
-<body>
+<body onload="updateTime()">
     <div id="clockContainer">
         <div id="hour"></div>
         <div id="minute"></div>
         <div id="second"></div>
     </div>
+	
+	
+  <div class="mobile">
+    <h1 class="shrug">¯\_(ツ)_/¯</h1>
+    <h2 class="shrug">NOT AVAILABLE ON MOBILE!<h2>
+    <h3 class="shrug">This website is designed for larger screens, <br>such as <span>PCs</span> and <span>TVs</span>.</h3>
+  </div>
+
+  <main>
+    <div id="time"></div>
+    <div id="date"></div>
+  </main>
+
+  <div class="btn-content">
+    <button onclick="enterFullscreen()" title="Enter Fullscreen">FULLSCREEN <i class="fas fa-expand"></i> </button>
+  </div>
 </body>
+
+
+
+
 </html>
+
